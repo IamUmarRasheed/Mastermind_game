@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="mastermind.js" defer></script>
+    <title>Mastermind Game</title>
+    <link rel="stylesheet" href="mastermind.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Mastermind Game</h1>
+      <div id="board">
+ 
+      </div>
+      <div class="controls">
+        <div class="peg-container" id="peg-container"></div>
+        <button id="remove-color">Remove Color</button>
+        <button id="check-guess">Check Guess</button>
+
+        <label class="allow-duplicates" for="allow-duplicates">
+          <input type="checkbox" id="allow-duplicates" checked /> Allow
+          Duplicates
+        </label>
+        <button id="restart">Restart Game</button>
+        <!-- Add this button to your HTML file -->
+      </div>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>

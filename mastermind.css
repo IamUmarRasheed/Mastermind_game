@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* height: 100vh; */
+   background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+#board {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid firebrick;
+    border-radius: 50%;
+}
+
+.cell.empty {
+    background-color: #fff;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.green {
+    background-color: green;
+}
+
+.cell.blue {
+    background-color: blue;
+}
+
+.cell.yellow {
+    background-color: yellow;
+}
+
+.feedback {
+    display: flex;
+    flex-wrap: column;
+    width: 60px;
+}
+
+.game-container {
+    background: linear-gradient(0deg,rgba(34,193,195,1) 0%,rgba(253,187,45,1) 100%) padding-box,
+    linear-gradient(to right, #999999, #ffffff) border-box;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin-top: 40px;
+}
+.game-container h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    color :#636363;
+}
+
+.feedback .peg {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 2px;
+    border: 1px solid #ccc;
+}
+
+.feedback .correct {
+    background-color: black;
+}
+
+.feedback .misplaced {
+    background-color: white;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.peg-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.peg {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border: 1px solid #761987;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-size: large;
+    color:black;
+    /* border: 2px dotted red; */
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Basic styling for all pegs */
+.peg {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* Styling for empty feedback circles */
+.empty-feedback {
+    background-color: transparent; /* Or any color to indicate it's empty */
+    border: 1px solid #ccc; /* Light gray border to show it's a feedback circle */
+}
+
+/* Styling for correctly guessed pegs */
+.correct {
+    background-color: black; /* Black pegs for correct position and color */
+}
+#allow-duplicates {
+    color: wheat;
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+.allow-duplicates {
+    color: #ffffff;
+}
+
+/* Styling for misplaced pegs */
+.misplaced {
+    background-color: white; /* White pegs for correct color but wrong position */
+}
+
+/* Button for removing color */
+#remove-color {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
