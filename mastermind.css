@@ -63,12 +63,13 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
 .game-container {
     background: linear-gradient(0deg,rgba(34,193,195,1) 0%,rgba(253,187,45,1) 100%) padding-box,
     linear-gradient(to right, #999999, #ffffff) border-box;
-    padding: 30px;
+    height:100vh;
+    padding: 0px 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 400px;
-    margin-top: 40px;
+    width: 350px;
+    margin-top: 0px;
 }
 .game-container h1 {
     font-size: 30px;
